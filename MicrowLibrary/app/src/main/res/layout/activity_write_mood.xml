@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:id="@+id/btn_enter"
+            android:background="@drawable/ic_menu_send"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_write_mood"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:hint="  写下你此时的心情"
+        android:textColorHint="#88000000"
+        android:lines="8"
+        android:gravity="top"
+        android:textSize="16sp"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="当前地址"
+        android:id="@+id/tv_address"
+        />
+
+
+</LinearLayout>

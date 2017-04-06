@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="输入用户名"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/usernameregist" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="输入密码"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:id="@+id/passwordregist" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="确认密码"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:id="@+id/passwordconfirm" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="11"
+        android:hint="输入邮箱"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/editTextEmail" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+
+        android:ems="11"
+        android:hint="输入年龄"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/editTextAge"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/Sex"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:checkedButton="@+id/male"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:layout_weight="0.09">
+
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="74dp"
+            android:layout_height="45dp"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="91dp"
+            android:layout_height="53dp"
+            android:text="female"
+            android:checked="false"
+            android:duplicateParentState="false" />
+    </RadioGroup>
+
+    <Button
+        android:text="注册"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/registconfirm"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:background="#87CEEB"
+        android:alpha="0.8"
+        android:elevation="0dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09" />
+
+    <Button
+        android:text="取消"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:textColor="#FFFFFF"
+        android:background="#87CEEB"
+        android:alpha="0.8"/>
+</LinearLayout>

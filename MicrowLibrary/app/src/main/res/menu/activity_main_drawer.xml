@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reading_record"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="我的阅读记录" />
+        <item
+            android:id="@+id/my_mood"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="读书笔记" />
+        <item
+            android:id="@+id/daily_check"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="阅读打卡" />
+        <item
+            android:id="@+id/my_footprint"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="书童推荐" />
+
+    </group>
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/drawer_setting"
+                android:icon="@drawable/ic_menu_share"
+                android:title="设置" />
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="关于" />
+
+        </menu>
+    </item>
+
+</menu>

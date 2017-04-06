@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#efefef" >
+
+    <!-- LinerLayout有比较奇怪的性质：当布局中的控件可以超出布局规定的大小 ,所以这里一行的行宽改成由内部的几个控件
+    控制，而LinerLayout的layout_height改成wrap_content ..  -->
+
+
+    <ImageView
+        android:id="@+id/buttonBookImage"
+        android:layout_height="160dp"
+        android:layout_width="120dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:id="@+id/textBookSummary"
+        android:text="简介："
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:textSize="8pt"
+
+        android:ellipsize="end"
+        android:lines="2"
+        android:layout_below="@+id/textBookGrade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textBookGrade"
+        android:text="评分："
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:textSize="8pt"
+
+        android:layout_below="@+id/textBookAuthor"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textBookAuthor"
+        android:text="作者："
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:textSize="8pt"
+        android:layout_below="@+id/textBookName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textBookGrade"
+        android:layout_alignEnd="@+id/textBookGrade" />
+
+    <TextView
+        android:text="笑傲江湖"
+        android:id="@+id/textBookName"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="评分："
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:textSize="8pt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textBookAuthor" />
+
+
+</RelativeLayout>

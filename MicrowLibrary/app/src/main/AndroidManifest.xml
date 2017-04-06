@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hasee.microwlibrary" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+       >
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReadRecordActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".MoodActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SignActivity"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".WriteMoodActivity"/>
+        <activity android:name=".AddRecordActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".RecommedActivity"/>
+        <activity android:name=".MoodNote.NoteEditActivity"/>
+        <activity android:name=".MoodNote.NoteActivity"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>

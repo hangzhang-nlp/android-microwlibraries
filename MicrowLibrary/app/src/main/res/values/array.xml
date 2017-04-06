@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayIsReadBook">
+        <item>已读</item>
+        <item>未读 </item>
+    </string-array>
+
+    <string-array name="ArrayScore">
+        <item>1分</item>
+        <item>2分</item>
+        <item>3分 </item>
+        <item>4分 </item>
+        <item>5分 </item>
+        <item>6分 </item>
+        <item>7分 </item>
+        <item>8分 </item>
+        <item>9分 </item>
+        <item>10分 </item>
+    </string-array>
+
+    <string-array name="ArrayPlanTime">
+        <item>一周内</item>
+        <item>两周内</item>
+        <item>一个月内</item>
+        <item>两个月内</item>
+    </string-array>
+</resources>
